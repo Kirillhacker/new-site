@@ -6,6 +6,7 @@ body {
   border: none;
   letter-spacing: 0.12em;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 *:focus {
@@ -21,16 +22,60 @@ body {
 }
 
 .vertical-center {
-  padding-top: 12vh;
+  padding-top: 15vh;
 }
-
-.button {
+.about-main-h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4vh;
+}
+.about-main-p {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 30vh;
+  margin-left: 30vh;
+  letter-spacing: 0.05em;
+  margin-bottom: 19vh;
+}
+.about-h1 {
+  font-size: 7vh;
+  margin-bottom: 2.5vh;
+}
+.about-p {
+  font-size: 3.5vh;
+}
+.buttons-all {
+  margin-top: 18vh;
+}
+/* .button {
+} */
+.about-button-service {
   font-weight: 500;
   padding: 2vh;
   width: 14vw;
   font-size: 2.5vh;
+  background: none;
+  border-color: white;
+  margin-right: 1.5vh;
 }
-
+.about-button-hire {
+  font-weight: 500;
+  padding: 2vh;
+  width: 14vw;
+  font-size: 2.5vh;
+  background-color: #00897b;
+  border-color: #00897b;
+  margin-left: 1.5vh;
+}
+.button-more {
+  font-weight: 500;
+  padding: 2vh;
+  width: 14vw;
+  font-size: 3vh;
+  background: none;
+  border: none;
+  font-size: 4vh;
+  transform: rotate(180deg) scaleX(-1);
+  margin-top: 7vh;
+}
 .wrapper {
   width: 85%;
   margin: 0 auto;
@@ -38,7 +83,18 @@ body {
   text-align: center;
   justify-content: center;
 }
-
+.about-us {
+  margin-top: 35vh; /*test*/
+  margin-bottom: 30vh;
+  margin-bottom: 8vh;
+  height: 600px;
+}
+.about-us-element {
+  width: 30%;
+  float: left;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
 /* KIRILL */
 
 ul.nav-links-my li {
@@ -78,7 +134,7 @@ ul.nav-links-my img {
   background-color: yellow;
 }
 .all-about {
-  margin-top: 12vh;
+  margin-top: 15vh;
   height: 600px;
 }
 .about-image {
@@ -91,9 +147,53 @@ ul.nav-links-my img {
   height: 100vh; /* You must set a specified height */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
+.aboutus-images {
+  width: 20%;
+  height: 10vh; /* You must set a specified height */
+  margin-bottom: 2vh;
+}
+
 *:focus {
   outline: 0 !important;
 }
 .vertical-center {
   padding-top: 12vh;
+}
+.services {
+  height: 1800px;
+  background-color: #e4fdf9;
+}
+.services-main-text {
+  font-size: 900;
+}
+.services-main-p {
+  width: 60%;
+  margin: 0 auto;
+}
+.services-text {
+  padding-top: 25vh;
+}
+.services-cards {
+  margin-top: 10vh;
+}
+.card {
+  width: 25%;
+  background-color: white;
+  height: 50vh;
+}
+.image-card-smartphone {
+  height: 20%;
+  width: 20%;
+  margin: 5vh;
+}
+.card-text {
+  width: 80%;
+  margin: 0 auto;
+}
+.button-card-read-more {
+  border-color: black;
+  color: black;
+  background: none;
+  height: 10vh;
+  width: 20vh;
 }
