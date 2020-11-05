@@ -8,32 +8,55 @@ body {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-
-*:focus {
-  outline: 0 !important;
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
 }
-
 .my-p-2 {
   padding: 2% 2% 4% 2%;
 }
-
-.text-white {
-  color: white;
+.title-text-my {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 3vh;
+  float: left;
 }
-
+ul.nav-links-my li {
+  display: inline;
+  float: right;
+  margin-right: 3vw;
+}
+.nav-links-my a {
+  color: black;
+  text-decoration: none;
+  font-size: 2vh;
+}
+.all-about {
+  margin-top: 15vh;
+  height: 600px;
+}
+.about-image {
+  margin: 0;
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh; /* You must set a specified height */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.vertical-center {
+  padding-top: 12vh;
+}
 .vertical-center {
   padding-top: 15vh;
 }
-.about-main-h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 4vh;
-}
-.about-main-p {
-  font-family: "Open Sans", sans-serif;
-  margin-right: 30vh;
-  margin-left: 30vh;
-  letter-spacing: 0.05em;
-  margin-bottom: 19vh;
+.text-white {
+  color: white;
 }
 .about-h1 {
   font-size: 7vh;
@@ -45,8 +68,6 @@ body {
 .buttons-all {
   margin-top: 18vh;
 }
-/* .button {
-} */
 .about-button-service {
   font-weight: 500;
   padding: 2vh;
@@ -76,18 +97,21 @@ body {
   transform: rotate(180deg) scaleX(-1);
   margin-top: 7vh;
 }
-.wrapper {
-  width: 85%;
-  margin: 0 auto;
-  z-index: 1;
-  text-align: center;
-  justify-content: center;
-}
 .about-us {
   margin-top: 35vh; /*test*/
   margin-bottom: 30vh;
-  margin-bottom: 8vh;
   height: 600px;
+}
+.about-main-h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4vh;
+}
+.about-main-p {
+  font-family: "Open Sans", sans-serif;
+  margin-right: 30vh;
+  margin-left: 30vh;
+  letter-spacing: 0.05em;
+  margin-bottom: 19vh;
 }
 .about-us-element {
   width: 30%;
@@ -95,91 +119,36 @@ body {
   margin-left: 2vh;
   margin-right: 2vh;
 }
-/* KIRILL */
-
-ul.nav-links-my li {
-  display: inline;
-  float: right;
-  margin-right: 3vw;
-}
-.title-text-my {
-  text-decoration: none;
-  font-weight: 600;
-  color: black;
-  font-size: 3vh;
-  float: left;
-}
-
-.nav-links-my a {
-  color: black;
-  text-decoration: none;
-  font-size: 2vh;
-}
-
-ul.nav-links-my img {
-  display: inline;
-  text-align: right;
-}
-
-/* test */
-
-.t1 {
-  background-color: teal;
-}
-
-.t2 {
-  background-color: blue;
-}
-.t3 {
-  background-color: yellow;
-}
-.all-about {
-  margin-top: 15vh;
-  height: 600px;
-}
-.about-image {
-  margin: 0;
-  position: absolute;
-  top: 12vh;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100vh; /* You must set a specified height */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
 .aboutus-images {
   width: 20%;
   height: 10vh; /* You must set a specified height */
   margin-bottom: 2vh;
 }
-
-*:focus {
-  outline: 0 !important;
-}
-.vertical-center {
-  padding-top: 12vh;
-}
 .services {
   height: 1800px;
   background-color: #e4fdf9;
+  /* margin-bottom: 300vh; */
+}
+.services-text {
+  padding-top: 25vh;
 }
 .services-main-text {
-  font-size: 900;
+  font-size: 4vh;
 }
 .services-main-p {
   width: 60%;
   margin: 0 auto;
-}
-.services-text {
-  padding-top: 25vh;
+  letter-spacing: 0.05em;
 }
 .services-cards {
   margin-top: 10vh;
 }
 .card {
-  width: 25%;
+  width: 30%;
   background-color: white;
-  height: 50vh;
+  height: 60vh;
+  float: left;
+  margin: 1%;
 }
 .image-card-smartphone {
   height: 20%;
@@ -196,4 +165,79 @@ ul.nav-links-my img {
   background: none;
   height: 10vh;
   width: 20vh;
+}
+.latest-work {
+  height: 1800px;
+  margin-top: 165vh;
+}
+.latest-work-btn {
+  padding: 2vh;
+  margin-top: 5vh;
+  font-size: 2.5vh;
+  background: none;
+  border: 3px solid #00897b;
+  margin-right: 1.5vh;
+}
+.latest-card {
+  width: 30%;
+  margin: 1%;
+  float: left;
+  position: relative;
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+}
+.latest-work-img1 {
+  z-index: -1;
+}
+.latest-work-h4 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.latest-work-p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.latest-card:hover {
+  animation-duration: 1s;
+  animation-name: Show-text;
+}
+.latest-work-btn:hover {
+  animation-duration: 2s;
+  animation-name: noname;
+}
+.card:hover {
+  animation-duration: 4s;
+  animation-name: noname;
+}
+*:focus {
+  outline: 0 !important;
+}
+.t1 {
+  background-color: teal;
+}
+.t2 {
+  background-color: blue;
+}
+.t3 {
+  background-color: yellow;
+}
+@keyframes noname {
+  1% {
+    background-color: white;
+  }
+  100% {
+    background-color: #00897b;
+  }
+}
+@keyframes Show-text {
+  1% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: white;
+  }
 }
