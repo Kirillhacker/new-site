@@ -167,7 +167,7 @@ ul.nav-links-my li {
   width: 20vh;
 }
 .latest-work {
-  height: 1800px;
+  height: 1500px;
   margin-top: 165vh;
 }
 .latest-work-btn {
@@ -177,6 +177,7 @@ ul.nav-links-my li {
   background: none;
   border: 3px solid #00897b;
   margin-right: 1.5vh;
+  margin-bottom: 7vh;
 }
 .latest-card {
   width: 30%;
@@ -186,7 +187,7 @@ ul.nav-links-my li {
   text-align: center;
   color: rgba(0, 0, 0, 0);
 }
-.latest-work-img1 {
+.latest-work-img {
   z-index: -1;
 }
 .latest-work-h4 {
@@ -200,6 +201,47 @@ ul.nav-links-my li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.plans {
+  height: 1800px;
+}
+.plans-header {
+  margin-bottom: 15vh;
+}
+.plans-h3 {
+  font-size: 6vh;
+}
+.plans-card {
+  width: 30%;
+}
+.plans-card-h4 {
+  font-size: 4vh;
+}
+.plans-card-h5 {
+  font-size: 2vh;
+}
+.plans-card-span {
+  font-size: 3.5vh;
+}
+.plans-card-p-underline {
+  text-decoration: underline;
+  margin-top: 1.5vh;
+}
+.plans-card-btn {
+  background: none;
+  border: 3px solid black;
+  font-size: 4vh;
+  padding-right: 3vh;
+  padding-left: 3vh;
+  margin-top: 3vh;
+}
+.plans-card-btn:hover {
+  animation-duration: 3s;
+  animation-name: plans-card-btn;
+}
+.latest-work-img:hover {
+  animation-duration: 1s;
+  animation-name: Img-dark;
 }
 .latest-card:hover {
   animation-duration: 1s;
@@ -238,6 +280,26 @@ ul.nav-links-my li {
     color: rgba(0, 0, 0, 0);
   }
   100% {
+    color: rgb(43, 41, 41);
+  }
+}
+@keyframes Img-dark {
+  1% {
+    filter: brightness(100%);
+  }
+  100% {
+    filter: brightness(50%);
+  }
+}
+@keyframes plans-card-btn {
+  1% {
+    background-color: white;
+    border-color: black;
+    color: black;
+  }
+  100% {
+    background-color: #00897b;
+    border-color: #00897b;
     color: white;
   }
 }
